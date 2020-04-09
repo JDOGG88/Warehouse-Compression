@@ -26,8 +26,8 @@ Adds 5x5 & 4x4 warehouses and 2x2 & 1x1 storehouses to expand the organization c
 
 ![Recipe Icons][hero-image-2]
 
-  [hero-image-1]: https://github.com/JDOGG88/Warehouse-Compression/blob/master/hero-image-1.jpg
-  [hero-image-2]: https://github.com/JDOGG88/Warehouse-Compression/blob/master/hero-image-2.jpg
+  [hero-image-1]: https://raw.githubusercontent.com/JDOGG88/Warehouse-Compression/master/hero-image-1.jpg
+  [hero-image-2]: https://raw.githubusercontent.com/JDOGG88/Warehouse-Compression/master/hero-image-2.jpg
 
   [badge-latest-release]: https://img.shields.io/github/release/JDOGG88/Warehousing-Compression.svg?label=current+version
   [badge-release-date]: https://img.shields.io/github/release-date/JDOGG88/Warehousing-Compression.svg?label=released
