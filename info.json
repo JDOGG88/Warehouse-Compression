@@ -1,11 +1,11 @@
 {
   "name": "Warehousing-Compression",
-  "version": "0.18.1",
-  "factorio_version": "0.18",
+  "version": "1.0.0",
+  "factorio_version": "1.0",
   "title": "Warehousing Compression",
   "author": "JDOGG",
-  "homepage": "",
-  "contact": "",
+  "homepage": "https://github.com/JDOGG88/Warehouse-Compression",
+  "contact": "https://github.com/JDOGG88/Warehouse-Compression/issues",
   "dependencies": [
     "base >= 0.18.0",
     "Warehousing >= 0.3.0"

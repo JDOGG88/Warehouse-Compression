@@ -1,4 +1,11 @@
-function createItem(name, size, order, mask_tint)
+local non_logistic_tint = { r = 255, g = 255, b = 255, a = 0.05 }
+local active_tint = { r = 140, g = 0, b = 210, a = 0.05 }
+local passive_tint = { r = 255, g = 0, b = 0, a = 0.05 }
+local storage_tint = { r = 255, g = 255, b = 0, a = 0.05 }
+local buffer_tint = { r = 0, g = 255, b = 0, a = 0.05 }
+local requester_tint = { r = 0, g = 0, b = 255, a = 0.05 }
+
+local function createItem(name, size, order, mask_tint)
     local i = table.deepcopy(data.raw["item"][name .. "-basic"])
     i.order = order
     i.name = name .. "-" .. size
@@ -11,7 +18,7 @@ function createItem(name, size, order, mask_tint)
     return i
 end
 
-function createLogisticItem(name, logistic_type, size, order, mask_tint)
+local function createLogisticItem(name, logistic_type, size, order, mask_tint)
     local li = table.deepcopy(data.raw["item"][name .. "-" .. logistic_type])
     li.order = order
     li.name = name .. "-" .. logistic_type .. "-" .. size

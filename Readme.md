@@ -1,7 +1,6 @@
 # Warehousing Compression
 
-Mod Plugin for [Warehousing Mod][warehousing-mod-portal-entry]. *Store **all** the things!* (We heard you like boxes, you packrat you!)
-
+Mod Plugin for [Warehousing Mod][warehousing-mod-portal-entry]. *Store **all** the things!* (We heard you like boxes, you packrat, you!)
 
 ## News
 

@@ -1,4 +1,11 @@
-function shift(modifier, value)
+local non_logistic_tint = { r = 255, g = 255, b = 255, a = 0.05 }
+local active_tint = { r = 140, g = 0, b = 210, a = 0.05 }
+local passive_tint = { r = 255, g = 0, b = 0, a = 0.05 }
+local storage_tint = { r = 255, g = 255, b = 0, a = 0.05 }
+local buffer_tint = { r = 0, g = 255, b = 0, a = 0.05 }
+local requester_tint = { r = 0, g = 0, b = 255, a = 0.05 }
+
+local function shift(modifier, value)
     return modifier + value
 end
 
@@ -16,7 +23,7 @@ local storehouse_small_cnc_shift_y = -0.55
 local storehouse_tiny_cnc_shift_x = -0.55
 local storehouse_tiny_cnc_shift_y = -0.75
 
-function circuitConnectorSprites(shift_x, shift_y)
+local function circuitConnectorSprites(shift_x, shift_y)
     local ccs = table.deepcopy(data.raw["container"]["steel-chest"].circuit_connector_sprites)
     ccs.led_light = { intensity = 0.8, size = 0.9 }
     ccs.blue_led_light_offset = { 0.609375, 0.890625 }
@@ -132,7 +139,7 @@ data.raw.container["storehouse-basic"].circuit_wire_connection_point.wire.green 
 data.raw.container["storehouse-basic"].circuit_wire_connection_point.shadow.red = { shift(storehouse_basic_cnc_shift_x, 0.85), shift(storehouse_basic_cnc_shift_y, 0.9) }
 data.raw.container["storehouse-basic"].circuit_wire_connection_point.shadow.green = { shift(storehouse_basic_cnc_shift_x, 1.05), shift(storehouse_basic_cnc_shift_y, 0.95) }
 
-function createContainer(name, size, connector, shift_x, shift_y, mask_tint)
+local function createContainer(name, size, connector, shift_x, shift_y, mask_tint)
     local cc = table.deepcopy(data.raw["container"][name .. "-basic"])
     cc.name = name .. "-" .. size
     cc.icons = {
@@ -228,7 +235,7 @@ local basic_logistic_storehouse_wcp =
     },
 }
 
-for k, v in pairs(data.raw["logistic-container"]) do
+for k, _ in pairs(data.raw["logistic-container"]) do
     if (string.match(k, "*storehouse-*") == k) then
         table.insert(data.raw["logistic-container"][k], { circuit_wire_connection_point = basic_logistic_storehouse_wcp })
     end
@@ -237,7 +244,7 @@ for k, v in pairs(data.raw["logistic-container"]) do
     end
 end
 
-function createLogisticContainer(name, size, logistic_type, wire_connection, mask_tint)
+local function createLogisticContainer(name, size, logistic_type, wire_connection, mask_tint)
     local clc = table.deepcopy(data.raw["logistic-container"][name .. "-" .. logistic_type])
     clc.name = name .. "-" .. logistic_type .. "-" .. size
     clc.minable.result = clc.name

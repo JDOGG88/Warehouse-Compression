@@ -1,12 +1,3 @@
-non_logistic_tint = { r = 255, g = 255, b = 255, a = 0.05 }
-active_tint = { r = 140, g = 0, b = 210, a = 0.05 }
-passive_tint = { r = 255, g = 0, b = 0, a = 0.05 }
-storage_tint = { r = 255, g = 255, b = 0, a = 0.05 }
-buffer_tint = { r = 0, g = 255, b = 0, a = 0.05 }
-requester_tint = { r = 0, g = 0, b = 255, a = 0.05 }
-
-research_tint = { r = 0, g = 0, b = 0, a = 1 }
-
 require("prototypes.item")
 require("prototypes.recipe")
 require("prototypes.entity")

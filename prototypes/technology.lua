@@ -1,3 +1,5 @@
+local research_tint = { r = 0, g = 0, b = 0, a = 1 }
+
 data:extend({
     {
         type = "technology",
