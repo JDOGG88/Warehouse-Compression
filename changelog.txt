@@ -1,4 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2021-05-06
+
+  Changed:
+    - New thumbnail to match base mod thumbnail (Thanks snouz)
+    - Updated readme images
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2021-05-05
+
+  Changed:
+    - Use updated graphics
+  Bugfix:
+    - Get correct item when mining a small or tiny entity
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2020-08-16
 

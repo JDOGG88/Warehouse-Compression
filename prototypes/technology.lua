@@ -1,16 +1,13 @@
-local research_tint = { r = 0, g = 0, b = 0, a = 1 }
-
 data:extend({
     {
         type = "technology",
         name = "warehouse-research-tiny",
         icons = {
             { icon = "__Warehousing__/graphics/research/warehouse-research.png" },
-            { icon = "__Warehousing-Compression__/graphics/research/research-mask.png", tint = research_tint },
+            { icon = "__Warehousing-Compression__/graphics/research/research-mask.png" },
         },
-        icon_size = 128,
-        effects =
-        {
+        icon_size = 256,
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "warehouse-small",
@@ -29,11 +26,9 @@ data:extend({
             },
         },
         prerequisites = { "steel-processing" },
-        unit =
-        {
+        unit = {
             count = 100,
-            ingredients =
-            {
+            ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
             },
@@ -45,12 +40,11 @@ data:extend({
         type = "technology",
         name = "warehouse-logistics-research-tiny-1",
         icons = {
-            { icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png" },
-            { icon = "__Warehousing-Compression__/graphics/research/research-mask.png", tint = research_tint },
+            { icon = "__Warehousing__/graphics/research/warehouse-logistics-research-1.png" },
+            { icon = "__Warehousing-Compression__/graphics/research/research-mask.png" },
         },
-        icon_size = 128,
-        effects =
-        {
+        icon_size = 256,
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "warehouse-passive-provider-small",
@@ -85,8 +79,7 @@ data:extend({
             },
         },
         prerequisites = { "warehouse-research-tiny", "robotics" },
-        unit =
-        {
+        unit = {
             count = 300,
             ingredients = {
                 { "automation-science-pack", 1 },
@@ -100,12 +93,11 @@ data:extend({
         type = "technology",
         name = "warehouse-logistics-research-tiny-2",
         icons = {
-            { icon = "__Warehousing__/graphics/research/warehouse-logistics-research.png" },
-            { icon = "__Warehousing-Compression__/graphics/research/research-mask.png", tint = research_tint },
+            { icon = "__Warehousing__/graphics/research/warehouse-logistics-research-2.png" },
+            { icon = "__Warehousing-Compression__/graphics/research/research-mask.png" },
         },
-        icon_size = 128,
-        effects =
-        {
+        icon_size = 256,
+        effects = {
             {
                 type = "unlock-recipe",
                 recipe = "warehouse-active-provider-small",
@@ -156,8 +148,7 @@ data:extend({
             },
         },
         prerequisites = { "warehouse-logistics-research-tiny-1", "logistic-system" },
-        unit =
-        {
+        unit = {
             count = 600,
             ingredients = {
                 { "automation-science-pack", 1 },

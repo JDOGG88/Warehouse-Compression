@@ -11,11 +11,13 @@ Go [grab it now][warehousing-compression-mod-portal-entry], or get it in-game by
 
 ### Latest
 
-Initial Release
+Update thumbnail to match the main mod thumbnail (Thanks! snouz)
+
+Update readme graphics
 
 ### Previously
 
-None
+Use the latest and greatest graphics from the main mod.
 
 ## Description
 
